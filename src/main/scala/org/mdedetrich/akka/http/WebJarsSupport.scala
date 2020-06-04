@@ -12,7 +12,7 @@ import scala.util.{Failure, Success, Try}
 trait WebJarsSupport {
   val webJarAssetLocator = new WebJarAssetLocator
 
-  final def webJars: Route = {
+  final def webJars: Route =
     extractUnmatchedPath { path =>
       Try(webJarAssetLocator.getFullPath(path.toString)) match {
         case Success(fullPath) =>
@@ -23,7 +23,6 @@ trait WebJarsSupport {
           failWith(e)
       }
     }
-  }
 }
 
 object WebJarsSupport extends WebJarsSupport

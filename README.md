@@ -3,11 +3,11 @@ Allows you to serve static assets from [WebJars](https://www.webjars.org/) with 
 
 ## Usage
 
-Published for Scala 2.11 and Scala 2.12
+Published for Scala 2.12 and Scala 2.13
 
 ```sbt
 libraryDependencies ++= Seq(
-  "org.mdedetrich" %% "akka-http-webjars" % "0.1.0"
+  "org.mdedetrich" %% "akka-http-webjars" % "0.3.0"
 )
 ```
 
