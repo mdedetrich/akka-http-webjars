@@ -1,4 +1,4 @@
-val currentScalaVersion = "2.12.11"
+val currentScalaVersion = "2.12.12"
 
 name in ThisBuild := "akka-http-webjars"
 
@@ -6,13 +6,13 @@ organization in ThisBuild := "org.mdedetrich"
 
 scalaVersion in ThisBuild := currentScalaVersion
 
-val akkaVersion = "2.6.5"
+val akkaVersion = "2.6.10"
 
-crossScalaVersions in ThisBuild := Seq(currentScalaVersion, "2.13.1")
+crossScalaVersions in ThisBuild := Seq(currentScalaVersion, "2.13.4")
 
 libraryDependencies ++= Seq(
-  "org.webjars"       % "webjars-locator" % "0.32",
-  "com.typesafe.akka" %% "akka-http"      % "10.1.12",
+  "org.webjars"       % "webjars-locator" % "0.40",
+  "com.typesafe.akka" %% "akka-http"      % "10.2.2",
   "com.typesafe.akka" %% "akka-actor"     % akkaVersion,
   "com.typesafe.akka" %% "akka-stream"    % akkaVersion
 )
