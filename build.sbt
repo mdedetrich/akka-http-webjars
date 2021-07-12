@@ -9,9 +9,8 @@ val akkaVersion = "2.6.15"
 
 libraryDependencies ++= Seq(
   "org.webjars"        % "webjars-locator" % "0.41",
-  "com.typesafe.akka" %% "akka-http"       % "10.2.4",
-  "com.typesafe.akka" %% "akka-actor"      % akkaVersion,
-  "com.typesafe.akka" %% "akka-stream"     % akkaVersion
+  "com.typesafe.akka" %% "akka-http"       % "10.2.4"    % Provided,
+  "com.typesafe.akka" %% "akka-stream"     % akkaVersion % Provided
 )
 
 val flagsFor12 = Seq(
