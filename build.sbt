@@ -1,14 +1,11 @@
 val currentScalaVersion = "2.12.12"
 
-name in ThisBuild := "akka-http-webjars"
-
-organization in ThisBuild := "org.mdedetrich"
-
-scalaVersion in ThisBuild := currentScalaVersion
+ThisBuild / name               := "akka-http-webjars"
+ThisBuild / organization       := "org.mdedetrich"
+ThisBuild / scalaVersion       := currentScalaVersion
+ThisBuild / crossScalaVersions := Seq(currentScalaVersion, "2.13.4")
 
 val akkaVersion = "2.6.10"
-
-crossScalaVersions in ThisBuild := Seq(currentScalaVersion, "2.13.4")
 
 libraryDependencies ++= Seq(
   "org.webjars"        % "webjars-locator" % "0.40",
@@ -46,8 +43,8 @@ publishTo := {
   else
     Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
-publishArtifact in Test := false
-pomIncludeRepository    := (_ => false)
+Test / publishArtifact := false
+pomIncludeRepository   := (_ => false)
 
 scalacOptions ++= {
   CrossVersion.partialVersion(scalaVersion.value) match {
