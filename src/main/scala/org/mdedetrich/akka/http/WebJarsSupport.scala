@@ -6,8 +6,7 @@ import org.webjars.WebJarAssetLocator
 
 import scala.util.{Failure, Success, Try}
 
-/**
-  * @author 杨博 (Yang Bo) &lt;pop.atry@gmail.com&gt;
+/** @author 杨博 (Yang Bo) &lt;pop.atry@gmail.com&gt;
   */
 trait WebJarsSupport {
   val webJarAssetLocator = new WebJarAssetLocator

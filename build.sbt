@@ -11,10 +11,10 @@ val akkaVersion = "2.6.10"
 crossScalaVersions in ThisBuild := Seq(currentScalaVersion, "2.13.4")
 
 libraryDependencies ++= Seq(
-  "org.webjars"       % "webjars-locator" % "0.40",
-  "com.typesafe.akka" %% "akka-http"      % "10.2.2",
-  "com.typesafe.akka" %% "akka-actor"     % akkaVersion,
-  "com.typesafe.akka" %% "akka-stream"    % akkaVersion
+  "org.webjars"        % "webjars-locator" % "0.40",
+  "com.typesafe.akka" %% "akka-http"       % "10.2.2",
+  "com.typesafe.akka" %% "akka-actor"      % akkaVersion,
+  "com.typesafe.akka" %% "akka-stream"     % akkaVersion
 )
 
 val flagsFor12 = Seq(
@@ -30,7 +30,8 @@ val flagsFor13 = Seq(
 
 homepage := Some(url("https://github.com/mdedetrich/akka-http-webjars"))
 scmInfo := Some(
-  ScmInfo(url("https://github.com/mdedetrich/akka-http-webjars"), "git@github.com:mdedetrich/akka-http-webjars.git"))
+  ScmInfo(url("https://github.com/mdedetrich/akka-http-webjars"), "git@github.com:mdedetrich/akka-http-webjars.git")
+)
 developers := List(
   Developer("atry", "Yang Bo", "pop.atry@gmail.com", url("https://www.zhihu.com/people/atry/activities")),
   Developer("mdedetrich", "Matthew de Detrich", "mdedetrich@gmail.com", url("https://github.com/mdedetrich"))
@@ -46,7 +47,7 @@ publishTo := {
     Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 publishArtifact in Test := false
-pomIncludeRepository := (_ => false)
+pomIncludeRepository    := (_ => false)
 
 scalacOptions ++= {
   CrossVersion.partialVersion(scalaVersion.value) match {
