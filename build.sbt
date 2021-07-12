@@ -17,12 +17,14 @@ libraryDependencies ++= Seq(
 val flagsFor12 = Seq(
   "-Xlint:_",
   "-Ywarn-infer-any",
-  "-opt-inline-from:<sources>"
+  "-opt-inline-from:<sources>",
+  "-opt:l:method"
 )
 
 val flagsFor13 = Seq(
   "-Xlint:_",
-  "-opt-inline-from:<sources>"
+  "-opt-inline-from:<sources>",
+  "-opt:l:method"
 )
 
 homepage := Some(url("https://github.com/mdedetrich/akka-http-webjars"))
