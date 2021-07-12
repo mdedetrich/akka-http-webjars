@@ -5,6 +5,10 @@ ThisBuild / organization       := "org.mdedetrich"
 ThisBuild / scalaVersion       := currentScalaVersion
 ThisBuild / crossScalaVersions := Seq(currentScalaVersion, "2.13.6")
 
+ThisBuild / githubWorkflowPublishTargetBranches := Seq()
+// This is set to false due to https://github.com/sbt/sbt/issues/6468
+ThisBuild / githubWorkflowUseSbtThinClient := false
+
 val akkaVersion = "2.6.15"
 
 libraryDependencies ++= Seq(
