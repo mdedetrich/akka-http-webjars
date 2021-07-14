@@ -2,8 +2,8 @@ val currentScalaVersion = "2.12.14"
 
 name                           := "akka-http-webjars"
 ThisBuild / organization       := "org.mdedetrich"
-ThisBuild / scalaVersion       := currentScalaVersion
 ThisBuild / crossScalaVersions := Seq(currentScalaVersion, "2.13.6")
+ThisBuild / scalaVersion       := (ThisBuild / crossScalaVersions).value.last
 
 ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 // This is set to false due to https://github.com/sbt/sbt/issues/6468
