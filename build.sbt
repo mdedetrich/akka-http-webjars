@@ -8,6 +8,7 @@ ThisBuild / scalaVersion       := (ThisBuild / crossScalaVersions).value.last
 ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 // This is set to false due to https://github.com/sbt/sbt/issues/6468
 ThisBuild / githubWorkflowUseSbtThinClient := false
+ThisBuild / versionScheme                  := Some(VersionScheme.EarlySemVer)
 
 val akkaVersion = "2.6.15"
 
