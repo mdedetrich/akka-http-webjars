@@ -3,7 +3,7 @@
 [![Apache License](https://img.shields.io/badge/license-APACHE_2-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # akka-http-webjars
-Allows you to serve static assets from [WebJars](https://www.webjars.org/) with [akka-http](link).
+Allows you to serve static assets from [WebJars](https://www.webjars.org/) with [akka-http](https://doc.akka.io/docs/akka-http/current/index.html).
 
 ## Usage
 
