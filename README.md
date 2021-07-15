@@ -11,7 +11,7 @@ Published for Scala 2.12 and Scala 2.13
 
 ```sbt
 libraryDependencies ++= Seq(
-  "org.mdedetrich" %% "akka-http-webjars" % "0.4.0"
+  "org.mdedetrich" %% "akka-http-webjars" % "0.5.0"
 )
 ```
 
